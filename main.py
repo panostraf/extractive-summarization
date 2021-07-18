@@ -71,10 +71,7 @@ class summarize_text:
 
 
         if len(sentences_raw) <= 200:
-            if len(unique_clusters) <= math.ceil(0.1 * len(sentences_raw)):
-                self.max_summary_len = math.ceil(len(unique_clusters))
-            else:
-                self.max_summary_len = math.ceil(0.1 * len(sentences_raw))
+            self.max_summary_len = math.ceil(0.1 * len(sentences_raw)):
                     
         
         num_sent_to_return = functions.number_of_sents(len(df_article['Clusters'].unique()),max_sents_output=self.max_summary_len)
