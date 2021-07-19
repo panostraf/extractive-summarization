@@ -1,5 +1,11 @@
- #### nlp_spring_term
- #### Document_Summarization
+ ## nlp_spring_term
+ ## Document_Summarization
+ 
+ #### clone the reposatory
+ #### Install requirements from requirements.txt
+ 
+ #### The input dataset must be inside a directory called data
+ 
  ####  From class summarize_text method single_article can be called in every module:
  ####  Example:
  ####  article = """ ....article.... """
