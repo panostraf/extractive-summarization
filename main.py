@@ -123,7 +123,4 @@ if __name__ == '__main__':
     print(summary_text)
     print(kw)
 
-    text = open("testfile.txt").read()
-    text = functions.replace_dot(text)
-    sents=[sent for sent in sent_tokenize(text)]
-    print(len(sents))
+    
