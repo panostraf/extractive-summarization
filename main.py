@@ -106,15 +106,6 @@ class summarize_text:
 
 
 if __name__ == '__main__':
-    # By runnint this file as it is, it will produce a summary example of the dataframe
-    # for the articles of one month
-    # df = pd.read_csv('data/cointelegraph_news_content.csv', error_bad_lines=False)
-    # dates= df['date'].str.split('-',expand=True)
-    # df['year'] = dates[0].astype(str)
-    # df['month'] = dates[1].astype(str)
-    # print(df['year'].unique())
-    # print(df['month'].unique())
-    # df = df[(df['year']== "2019") & (df['month']== "01")].sample(n=100)
     df = pd.read_csv('data/cointelegraph_news_content.csv', error_bad_lines=False,nrows=5)
     print(len(df))
     articles = df.content.to_list()
